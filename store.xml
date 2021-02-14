@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE store [
+<!ELEMENT store (department+)>
+<!ELEMENT department (shelf+)>
+<!ELEMENT shelf (item+)>
+<!ELEMENT item (title, price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST department domain CDATA "Food">
+<!ATTLIST shelf domain CDATA "Winter clothes">
+]>
+
+
+
+<store>
+<department domain="Food">
+<shelf domain="Fruit">
+<item>
+<title> Orange </title>
+<price> 3 $ </price>
+</item>
+<item>
+<title> Apple </title>
+<price> 2 $ </price>
+</item>
+</shelf>
+</department>
+<department domain="Clothes">
+<shelf domain="Summer clothes">
+<item>
+<title> Dress </title>
+<price> 50 $ </price>
+</item>
+<item>
+<title> T-shirt </title>
+<price> 15 $ </price>
+</item>
+</shelf>
+<shelf domain="Winter clothes">
+<item>
+<title> Sweater </title>
+<price> 30 $ </price>
+</item>
+<item>
+<title> Gloves </title>
+<price> 5 $ </price>
+</item>
+</shelf>
+</department>
+</store>
